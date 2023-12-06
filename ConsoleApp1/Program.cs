@@ -6,13 +6,13 @@
         {
             Console.WriteLine();
 
-            Console.Write("Enter your name: ");
-            string? userName = Console.ReadLine();
+            Console.Write("Enter a number: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("Enter your age: ");
-            string? userAge = Console.ReadLine();
+            Console.Write("Enter another number: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("Hello " + userName + ", you are " + userAge + ".");
+            Console.WriteLine(num1 + num2);
 
             Console.WriteLine();
         }
