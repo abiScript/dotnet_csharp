@@ -4,8 +4,11 @@
     {
         static void Main(string[] args)
         {
-            string phrase = "The Academy";
-            Console.WriteLine(phrase[4..]);
+            Console.WriteLine();
+
+            Console.WriteLine(Math.Round(4.6));
+
+            Console.WriteLine();
         }
     }
 }
