@@ -4,16 +4,25 @@
     {
         static void Main(string[] args)
         {
+            string? colour, pluralNoun, celebrity;
+
             Console.WriteLine();
 
-            Console.Write("Enter a number: ");
-            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a colour: ");
+            colour = Console.ReadLine();
 
-            Console.Write("Enter another number: ");
-            double num2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter a plural noun: ");
+            pluralNoun = Console.ReadLine();
 
-            Console.WriteLine(num1 + num2);
+            Console.Write("Enter a celebrity: ");
+            celebrity = Console.ReadLine();
 
+            Console.WriteLine();
+
+            Console.WriteLine("Roses are " + colour);
+            Console.WriteLine(pluralNoun + " are blue");
+            Console.WriteLine("I love " + celebrity);
+            
             Console.WriteLine();
         }
     }
