@@ -4,19 +4,8 @@
     {
         static void Main(string[] args)
         {
-            string characterName = "Dude";
-            int characterAge = 25;
-
-            Console.WriteLine("");
-            Console.WriteLine("There once was a man named " + characterName);
-            Console.WriteLine("He was " + characterAge + " years old");
-
-            characterName = "Fresh";
-
-            Console.WriteLine("He really liked the name " + characterName);
-            Console.WriteLine("But didn't like being " + characterAge);
-
-            Console.ReadLine();
+            string phrase = "The Academy";
+            Console.WriteLine(phrase[4..]);
         }
     }
 }
