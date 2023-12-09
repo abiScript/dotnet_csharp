@@ -4,18 +4,18 @@
     {
         static void Main(string[] args)
         {
+            Console.Clear();
             Console.WriteLine();
 
-            SayHi("Sally", 21);
-            SayHi("Tim", 50);
-            SayHi("Thanos", 10394);
-        
+            Console.WriteLine(Cube(3));
+
             Console.WriteLine();
         }
 
-        static void SayHi(string name, int age)
+        static int Cube(int number)
         {
-            Console.WriteLine("Hi " + name + ", you are " + age);
+            int result = number * number * number;
+            return result;
         }
     }
 }
