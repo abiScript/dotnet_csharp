@@ -5,18 +5,20 @@
         static void Main(string[] args)
         {
             Console.Clear();
-            Console.WriteLine();
 
-            Console.WriteLine(Cube(3));
+            bool isFemale = true;
+
+            if(isFemale)
+            {
+                Console.WriteLine("You are female");
+            } else {
+                Console.WriteLine("You are not female");
+            }
+
 
             Console.WriteLine();
         }
 
-        static int Cube(int number)
-        {
-            int result = number * number * number;
-            return result;
-        }
     }
 }
 
