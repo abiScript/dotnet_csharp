@@ -6,18 +6,16 @@
         {
             Console.WriteLine();
 
-            int[] luckyNumbers = [4, 8, 15, 17, 35, 48];
-
-            luckyNumbers[4] = 900;
-            
-            Console.WriteLine(luckyNumbers[4]);
-
-            string[] people = new string[5];
-
-            people[0] = "Jim";
-            people[1] = "Kelly";
-            
+            SayHi("Sally", 21);
+            SayHi("Tim", 50);
+            SayHi("Thanos", 10394);
+        
             Console.WriteLine();
+        }
+
+        static void SayHi(string name, int age)
+        {
+            Console.WriteLine("Hi " + name + ", you are " + age);
         }
     }
 }
