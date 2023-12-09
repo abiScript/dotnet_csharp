@@ -11,6 +11,11 @@
             luckyNumbers[4] = 900;
             
             Console.WriteLine(luckyNumbers[4]);
+
+            string[] people = new string[5];
+
+            people[0] = "Jim";
+            people[1] = "Kelly";
             
             Console.WriteLine();
         }
