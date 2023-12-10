@@ -6,7 +6,21 @@
         {
             Console.Clear();
 
+            Console.WriteLine(GetPow(4, 3));
+
             Console.WriteLine();
+        }
+
+        static int GetPow(int baseNum, int powNum)
+        {
+            int result = 1;
+
+            for(int i = 0; i < powNum; i++)
+            {
+                result *= baseNum;
+            }
+
+            return result;
         }
 
     }
