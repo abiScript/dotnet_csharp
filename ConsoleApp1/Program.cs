@@ -6,15 +6,31 @@
         {
             Console.Clear();
 
-            int[,] numberGrid = {
-                {1, 2},
-                {3, 4},
-                {5, 6}
-            };
+            try
+            {
+                Console.Write("Enter a number: ");
+                int num1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(numberGrid[2, 1]);
+                Console.Write("Enter another number: ");
+                int num2 = Convert.ToInt32(Console.ReadLine());
 
-            int [,] emptyArr = new int[2, 3];
+                Console.WriteLine(num1 / num2);
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            catch
+            {
+                Console.WriteLine("Error found");
+            }
+            // finally
+            // {
+            // }
 
             Console.WriteLine();
         }
