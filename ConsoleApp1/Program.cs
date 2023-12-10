@@ -14,6 +14,8 @@
 
             Console.WriteLine(numberGrid[2, 1]);
 
+            int [,] emptyArr = new int[2, 3];
+
             Console.WriteLine();
         }
     }
