@@ -39,4 +39,9 @@ public class Book
    {
         return bookCount;
    }
+
+   public static void DescribeBook(Book book)
+   {
+        Console.WriteLine("The " + book.Title + " book has " + book.Pages + " pages, authored by " + book.Author + ".");
+   }
 }

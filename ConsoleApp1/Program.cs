@@ -10,14 +10,14 @@ class Program
 
         myBook.Title = "Hobbit";
 
-        Console.WriteLine("The " + myBook.Title + " book has " + myBook.Pages + " pages, authored by " + myBook.Author + ".");
-        
+        Book.DescribeBook(myBook);
+
         Console.WriteLine(myBook.GetBookCount());
 
         Book myBook2 = new("Rings", "Tolkein", 2000);
 
-        Console.WriteLine("The " + myBook2.Title + " book has " + myBook2.Pages + " pages, authored by " + myBook2.Author + ".");
-
+        Book.DescribeBook(myBook2);
+        
         Console.WriteLine(Book.bookCount);
 
         Console.WriteLine();
