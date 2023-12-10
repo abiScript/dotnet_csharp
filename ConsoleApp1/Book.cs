@@ -2,14 +2,9 @@
 
 public class Book
 {
-    public string? title;
-    public string? author;
-    public int pages;
-
-    public Book()
-    {
-
-    }
+    private string title;
+    private string author;
+    private int pages;
 
     public Book(string aTitle, string author, int pages)
     {
@@ -19,4 +14,20 @@ public class Book
         this.author = author;
         this.pages = pages;
     }
+
+    public string Title
+    {
+        get { return title; }
+        set { title = value; }
+    }
+
+   public string Author
+   {
+        get { return author; }
+   }
+
+   public int Pages
+   {
+        get { return pages; }
+   }
 }

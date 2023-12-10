@@ -7,15 +7,14 @@ class Program
         Console.Clear();
 
         Book myBook = new("Potter",  "Rowling", 100);
-        myBook.title = "Hobbit";
 
-        Console.WriteLine("The " + myBook.title + " book has " + myBook.pages + " pages, authored by " + myBook.author + ".");
+        myBook.Title = "Hobbit";
+
+        Console.WriteLine("The " + myBook.Title + " book has " + myBook.Pages + " pages, authored by " + myBook.Author + ".");
 
         Book myBook2 = new("Rings", "Tolkein", 2000);
 
-        Console.WriteLine("The " + myBook2.title + " book has " + myBook2.pages + " pages, authored by " + myBook2.author + ".");
-
-        Book myBook3 = new();
+        Console.WriteLine("The " + myBook2.Title + " book has " + myBook2.Pages + " pages, authored by " + myBook2.Author + ".");
 
         Console.WriteLine();
     }
