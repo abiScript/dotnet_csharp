@@ -1,40 +1,32 @@
-﻿namespace ConsoleApp1
+﻿namespace ConsoleApp1;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        Console.Clear();
+
+        Book myBook = new()
         {
-            Console.Clear();
+            title = "Potter",
+            author = "Rowling",
+            pages = 100
+        };
 
-            try
-            {
-                Console.Write("Enter a number: ");
-                int num1 = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("The " + myBook.title + " book has " + myBook.pages + " pages, authored by " + myBook.author + ".");
 
-                Console.Write("Enter another number: ");
-                int num2 = Convert.ToInt32(Console.ReadLine());
+        Book myBook2 = new()
+        {
+            title = "Rings",
+            author = "Tolkein",
+            pages = 2000
+        };
 
-                Console.WriteLine(num1 / num2);
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            catch
-            {
-                Console.WriteLine("Error found");
-            }
-            // finally
-            // {
-            // }
+        Console.WriteLine("The " + myBook2.title + " book has " + myBook2.pages + " pages, authored by " + myBook2.author + ".");
 
-            Console.WriteLine();
-        }
+        Console.WriteLine();
     }
 }
+
 
 // See https://aka.ms/new-console-template for more information on new style of template
