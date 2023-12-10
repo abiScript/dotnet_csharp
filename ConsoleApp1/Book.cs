@@ -6,6 +6,8 @@ public class Book
     private string author;
     private int pages;
 
+    public static int bookCount = 0; // Belongs to the class only, not the objects.
+
     public Book(string aTitle, string author, int pages)
     {
         Console.WriteLine("~ Creating book...");
@@ -13,6 +15,8 @@ public class Book
         title = aTitle;
         this.author = author;
         this.pages = pages;
+
+        bookCount++;
     }
 
     public string Title
@@ -29,5 +33,10 @@ public class Book
    public int Pages
    {
         get { return pages; }
+   }
+
+   public int GetBookCount()
+   {
+        return bookCount;
    }
 }
