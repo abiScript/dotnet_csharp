@@ -6,23 +6,16 @@ class Program
     {
         Console.Clear();
 
-        Book myBook = new()
-        {
-            title = "Potter",
-            author = "Rowling",
-            pages = 100
-        };
+        Book myBook = new("Potter",  "Rowling", 100);
+        myBook.title = "Hobbit";
 
         Console.WriteLine("The " + myBook.title + " book has " + myBook.pages + " pages, authored by " + myBook.author + ".");
 
-        Book myBook2 = new()
-        {
-            title = "Rings",
-            author = "Tolkein",
-            pages = 2000
-        };
+        Book myBook2 = new("Rings", "Tolkein", 2000);
 
         Console.WriteLine("The " + myBook2.title + " book has " + myBook2.pages + " pages, authored by " + myBook2.author + ".");
+
+        Book myBook3 = new();
 
         Console.WriteLine();
     }
