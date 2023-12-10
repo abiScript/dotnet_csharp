@@ -35,7 +35,7 @@ public class Book
         get { return pages; }
    }
 
-   public int GetBookCount()
+   public virtual int GetBookCount()
    {
         return bookCount;
    }

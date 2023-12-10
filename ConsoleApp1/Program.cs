@@ -20,6 +20,13 @@ class Program
         
         Console.WriteLine(Book.bookCount);
 
+        FantasyBook fantasyBook = new("Fanta", "Me", 150);
+
+        fantasyBook.SayHiFantasy();
+        Book.DescribeBook(fantasyBook);
+
+        Console.WriteLine(fantasyBook.GetBookCount());
+
         Console.WriteLine();
     }
 }
